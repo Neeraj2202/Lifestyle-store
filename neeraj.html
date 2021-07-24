@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    display:block;
+    margin-Left:25%;
+    margin-right:25%;
+    width: 50%;
+    height: 500px;
+  }
+  header{
+    position:sticky;
+    top:0px;
+    z-index: 2;
+  }
+  .a1{
+    display: flex;
+    flex-direction: row;
+  }
+  .card{
+    width:30%;
+    margin:1.5%;
+    border: 1px solid brown;
+  }
+  
+  .row mb-5{
+        width:100%;
+        padding: 20px;
+        background-color: rgb(129, 146, 128);
+  }
+ 
+
+  @media only screen and (max-width:600px){
+    .carousel-inner img{
+    display:block;
+    margin-Left:0px;
+    margin-right:0px;
+    width: 100%;
+    height: 200px;
+  }
+  .card{
+    width:90%;
+    margin:auto;
+    margin-bottom: 3%;
+    border: 1px solid brown;
+  }
+  .a1{
+    display: flex;
+    flex-direction: column;
+  }
+  #lmc img{
+    width:40%;
+    border:2px double rgb(80, 75, 68);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  
+  }
+  </style>
+	
+</head>
+<body>
+<header>		
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Neeraj Arena</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+</header>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://scontent.fpat3-1.fna.fbcdn.net/v/t1.0-9/93441620_645902222872372_6687810369647280128_o.jpg?_nc_cat=106&_nc_sid=09cbfe&_nc_ohc=G36RBTejho8AX_DCocd&_nc_ht=scontent.fpat3-1.fna&oh=9b10751ebc34b5d8be22d755b4ead016&oe=5FA566EE" alt="neeraj" width="100%" height="100%">
+    </div>
+    <div class="carousel-item">
+      <img src="https://scontent.fpat3-2.fna.fbcdn.net/v/t1.0-9/91846603_639366186859309_2068487207877869568_n.jpg?_nc_cat=102&_nc_sid=174925&_nc_ohc=7MaNxENTnqsAX-2P6tj&_nc_ht=scontent.fpat3-2.fna&oh=612abb989d77ed01d24c6cb1ea30b535&oe=5FA35A7D" alt="siriya" width="100%" height="100%">
+    </div>
+    <div class="carousel-item">
+      <img src="https://scontent.fpat3-1.fna.fbcdn.net/v/t1.0-9/73146650_523222978473631_7654560448020217856_o.jpg?_nc_cat=111&_nc_sid=8bfeb9&_nc_ohc=y4RvoYq_pOMAX-gQaqS&_nc_ht=scontent.fpat3-1.fna&oh=54b3cac0ac058cb54243bb690086031b&oe=5FA217AE" alt="New York" width="100%" height="100%">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+
+		<div class="container-fluid" id="lmc">
+			<h1 class="text-center text-capitalize pt-5">know more</h1>
+			<hr class="w-25 mx-auto pt-5">
+			<div class="row mb-5">
+       
+				<div class="col-lg-6 col-md-12 col-12" >
+					<img src="https://scontent.fpat3-1.fna.fbcdn.net/v/t1.0-0/p206x206/82143415_586395445489717_6296017650405343232_o.jpg?_nc_cat=103&_nc_sid=da31f3&_nc_ohc=aNelw3M2PD4AX87F0Yn&_nc_ht=scontent.fpat3-1.fna&tp=6&oh=0ded2d3dd14cc7cf493d870c7ade7879&oe=5FA44E35" >
+				</div>
+      
+				<div class="col-lg-6 col-md-12 col-12"></div>
+				   
+        <h1>who am i?</h1>
+        <hr>
+				    <p>
+				    	NEERAJ SINGH
+                        Mobile   :(+91) 7667248773
+                        Address:House number - 4,
+	                             (Near IDBI Bank),
+	                    P.S – Parsa Bazar, District – Patna,
+                        State – Bihar,
+	                    Pin Code - 804453
+	                    objective:To become an innovative Software engineer and explore my knowledge to meet company’s 
+	                    Interest/Hobbies/Achievements:
+                        •	Runner Up of Inter College cricket tournament
+                        •	Active member of Rotaract Club
+                        •	Active participant Blood donation camps and social works and Awareness campaigns related to Cloth distribution, River Cleanliness etc.
+                        •	Casual Dancing in Bollywood style.
+                    </p>
+                    <button class="btn bg-primary text-white">wanna know me</button>  
+
+				    
+				
+			</div>
+    </div>
+  </div>
+
+
+	<section>
+		<div class="container-fluid">
+			<h1 class="text-center text-capitalize pt-5">about me</h1>
+			<hr class="w-25 mx-auto pt-5">
+			<div class="row mb-5">
+				
+</div>
+<div class="a1" >
+  <div class="card">
+                <img class="card-img-top" src="https://scontent.fpat3-2.fna.fbcdn.net/v/t1.0-0/p206x206/84358945_605317766930818_2260972729958137856_o.jpg?_nc_cat=107&_nc_sid=da31f3&_nc_ohc=smzzfQ32NDEAX8J-ycr&_nc_ht=scontent.fpat3-2.fna&tp=6&oh=acde514024d6ceb00acd5a343341aa14&oe=5FA4024A" alt="Card image">
+                <h4 class="card-title" style="padding: 1%;">neeraj singh</h4>
+                <p class="card-text" style="padding: 5%;">The purpose of our lives is to be happy.</p>
+                <a href="#" class="btn btn-primary" style="padding: 5%;  margin:5%;">See Profile</a>
+  </div>
+		<div class="card">
+                <img class="card-img-top" src="https://scontent.fpat3-1.fna.fbcdn.net/v/t1.0-0/c55.0.206.206a/p206x206/73375645_523223065140289_2725183786131128320_o.jpg?_nc_cat=101&_nc_sid=da31f3&_nc_ohc=XiIMqapcW4kAX-BZjqf&_nc_ht=scontent.fpat3-1.fna&_nc_tp=27&oh=7b8eeae70f8b64cefec8d4d6bf66c8a5&oe=5FA3366F" alt="Card image">
+              
+                <h4 class="card-title" style="padding: 1%;">neeraj singh</h4>
+                <p class="card-text" style="padding: 5%;">Get busy living or get busy dying.</p>
+                <a href="#" class="btn btn-primary" style="padding: 5%;  margin:5%;">See Profile</a>
+  </div>
+	<div class="card">
+                <img class="card-img-top" src="https://scontent.fpat3-2.fna.fbcdn.net/v/t1.0-0/c0.0.206.206a/p206x206/73327020_517530339042895_8408171387054718976_o.jpg?_nc_cat=104&_nc_sid=da31f3&_nc_ohc=pawN5kZLCsgAX-3pALG&_nc_ht=scontent.fpat3-2.fna&_nc_tp=27&oh=7d2fa557d8a1a9be991c2652289befff&oe=5FA4C5D3" alt="Card image">
+                
+                <h4 class="card-title" style="padding: 1%;">neeraj singh</h4>
+                <p class="card-text" style="padding: 2%;">You only live once, but if you do it right, once is enough.</p>
+                <a href="#" class="btn btn-primary" style="padding: 5%; margin:5%;">See Profile</a>
+  </div>
+	</div>
+
+
+		
+	</section>
+	
+	<section class="bg-primary">
+		<article class="py-5 text-center text-white">
+			<div>
+				<h3 class="display-3 ">THANKS FOR VISIT</h3>
+				<p>for more information contact me</p>
+				<button class=" btn-warning">contact now</button>
+			</div>
+			
+		</article>
+	</section>
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>> 

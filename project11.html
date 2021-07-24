@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Home|Eclaps</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!--To include bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!--To Include external JS file-->
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <!--Header Component-->
+    <header class="header ">
+        <div class="header-inner">
+            <div class="container-fluid ">
+                <div class="row d-flex justify-content-center">
+                    <nav class="navbar navbar-expand-xl navbar-expand-lg my-navbar  ">
+
+                        <button class="navbar-toggler   " type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon "><i class="fa fa-bars" aria-hidden="true"
+                                    style="color: black; margin: 5px 0 0 0;"></i>
+                            </span>
+                        </button>
+                        <a class="navbar-brand " href="./index.html"><img src="./images/logo-white.png "
+                                class="img-fluid"></a>
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto ">
+                                <li class="nav-item ">
+                                    <a class="nav-link mr-2" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link mr-2" href="#Why Eclaps">Why Eclaps</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mr-2" href="#Features">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mr-2" href="#">App Interface</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mr-2" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mr-2" href="#">Reseller</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mr-2" href="#">Connect</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End of Header Component-->
+    <!--Start of Home Page-->
+    <section class="welcome-area ">
+        <div class="container ">
+
+
+
+            <div class="row  d-flex justify-content-between ">
+                <div class="login mt-3">
+                    <div class="col ">
+                        <h1 style="color: white !important;">Login to access your own fully functional <br>
+                            E-Commerce Application
+                        </h1>
+                    </div>
+                    <br>
+                    <div id="login" class=" col-8 col-xs-4 col-xs-offset-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-body">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email" name="e-mail"
+                                            required="true">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Password"
+                                            name="password" required="true">
+                                    </div>
+                                    <button type="submit" name="submit"
+                                        class="btn btn-warning btn-lg">Login</button><br><br>
+                                </form><br />
+                            </div>
+                            <div class="panel-footer">
+                                <p style="color: white !important;">Don't have an account? <a href="#"
+                                        onclick="signup()">Sign Up</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-2 home-Phone" style="float: right;">
+                    <img class="mx-auto phoneimg " src="images/Phone.png" alt="Homemobile">
+
+                </div>
+
+
+            </div>
+
+            <div id="signuppage" class=" modal   col col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3" tabindex="-1"
+                role="dialog" style="display: none;">
+                
+                <div class="modal-dialog modal-dialog-centered " role="document">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #09003d !important;">
+                            <h5 class="modal-title "  style="color: white !important;"> SIGN UP
+                            </h5>
+                            <button id="signupclose" type="button" class="close " data-dismiss="modal"
+                                aria-label="Close" onclick="signupclose()">
+                                <span aria-hidden="true" style="color: white;">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Name" name="name" required="true">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email" name="e-mail"
+                                        required="true">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password" name="password"
+                                        required="true">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Contact Number" name="contact"
+                                        required="true">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="City" name="city" required="true">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Address" name="address" required="true">
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer" style="background-color: #09003d !important;">
+                            <button type="submit" name="submit" class="btn btn-warning btn-lg">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        </div>
+    </section>
+    <div>
+        <p style="font-size: 500pt;"> hello</p>
+    </div>
+    <section id="Why Eclaps" class="section features-area overflow-hidden ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-md-10 col-lg-6">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center">
+                            <h2>Why Small Business Owner's Love NClaps</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-12 col-sm-3 col-md-4  col-lg-4">
+                        <!-- Features Item -->
+                        <ul class="features-item">
+                            <li>
+                                <!-- Image Box -->
+                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.3s">
+                                    <!-- Featured Image -->
+                                    <div class="featured-img mr-3">
+                                        <img class="avatar-sm" src="assets/img/icon/featured-img/layers.png" alt="">
+                                    </div>
+                                    <!-- Icon Text -->
+                                    <div class="icon-text media-body align-self-center align-self-md-start">
+                                        <h3 class="mb-1">One platform for all your business needs</h3>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Image Box -->
+                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.6s">
+                                    <!-- Featured Image -->
+                                    <div class="featured-img mr-3">
+                                        <img class="avatar-sm" src="assets/img/icon/featured-img/support.png" alt="">
+                                    </div>
+                                    <!-- Icon Text -->
+                                    <div class="icon-text media-body align-self-center align-self-md-start">
+                                        <h3 class="mb-1">Monthly Application updates (enable new features frequently)</h3>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Image Box -->
+                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.9s">
+                                    <!-- Featured Image -->
+                                    <div class="featured-img mr-3">
+                                        <img class="avatar-sm" src="assets/img/icon/featured-img/icons8-budget-96.png" alt="">
+                                    </div>
+                                    <!-- Icon Text -->
+                                    <div class="icon-text media-body align-self-center align-self-md-start">
+                                        <h3 class="mb-1">Application makes 3 times more sales</h3>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Image Box -->
+                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.9s">
+                                    <!-- Featured Image -->
+                                    <div class="featured-img mr-3">
+                                        <img class="avatar-sm" src="assets/img/icon/featured-img/lock.png" alt="">
+                                    </div>
+                                    <!-- Icon Text -->
+                                    <div class="icon-text media-body align-self-center align-self-md-start">
+                                        <h3 class="mb-1">Secured payment getaway</h3>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-4 col-sm-6  d-lg-block">
+                        <!-- Featutes Thumb -->
+                        <div class="features-thumb text-center">
+                            <img src="assets/img/Phone.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-sm-3  col-lg-4">
+                        <!-- Features Item -->
+                        <ul class="features-item">
+                            <li>
+                                <!-- Image Box -->
+                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInRight" data-aos-duration="2s" data-wow-delay="0.3s">
+                                    <!-- Featured Image -->
+                                    <div class="featured-img mr-3">
+                                        <img class="avatar-sm" src="assets/img/icon/featured-img/speak.png" alt="">
+                                    </div>
+                                    <!-- Icon Text -->
+                                    <div class="icon-text media-body align-self-center align-self-md-start">
+                                        <h3 class="mb-1">24*7 email support and customer support*</h3>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Image Box -->
+                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInRight" data-aos-duration="2s" data-wow-delay="0.6s">
+                                    <!-- Featured Image -->
+                                    <div class="featured-img mr-3">
+                                        <img class="avatar-sm" src="assets/img/icon/featured-img/seo-and-web.png" alt="">
+                                    </div>
+                                    <!-- Icon Text -->
+                                    <div class="icon-text media-body align-self-center align-self-md-start">
+                                        <h3 class="mb-1">Launch your application in 7 days</h3>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Image Box -->
+                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInRight" data-aos-duration="2s" data-wow-delay="0.9s">
+                                    <!-- Featured Image -->
+                                    <div class="featured-img mr-3">
+                                        <img class="avatar-sm" src="assets/img/icon/featured-img/icons8-increase-100.png" alt="">
+                                    </div>
+                                    <!-- Icon Text -->
+                                    <div class="icon-text media-body align-self-center align-self-md-start">
+                                        <h3 class="mb-1">45% sales growth Year to yearthrough application</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Image Box -->
+                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.9s">
+                                    <!-- Featured Image -->
+                                    <div class="featured-img mr-3">
+                                        <img class="avatar-sm" src="assets/img/icon/featured-img/icons8-sales-performance-100.png" alt="">
+                                    </div>
+                                    <!-- Icon Text -->
+                                    <div class="icon-text media-body align-self-center align-self-md-start">
+                                        <h2 class="mb-1">Budget friendly packages.</h2>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section id="Features" class="section features-area ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-md-10 col-lg-6">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center">
+                            <h2>Explore Our Premium Features</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4 col-sm-4 col-xs-6 col-lg-4">
+                        <!-- Icon Box -->
+                        <div class="icon-box text-center p-1 wow fadeInUp" data-wow-duration="2s">
+                            <!-- Featured Icon -->
+                            <div class="featured-icon mb-1">
+                                <img src="https://img.icons8.com/ios/80/000000/one-finger.png"/>
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Mobile push notifications*</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-sm-4 col-xs-6 col-lg-4">
+                        <!-- Icon Box -->
+                        <div class="icon-box text-center p-1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+                            <!-- Featured Icon -->
+                            <div class="featured-icon mb-3">
+                                <img src="https://img.icons8.com/dotty/80/000000/blockchain-technology.png"/>
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Latest technology used to do app</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-sm-4 col-xs-6 col-lg-4">
+                        <!-- Icon Box -->
+                        <div class="icon-box text-center p-1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
+                            <!-- Featured Icon -->
+                            <div class="featured-icon mb-3">
+                                <img src="https://img.icons8.com/wired/80/000000/mobile-payment.png"/>
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Secured payment getaway</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-sm-4 col-xs-6 col-lg-4">
+                        <!-- Icon Box -->
+                        <div class="icon-box text-center p-1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
+                            <!-- Featured Icon -->
+                            <div class="featured-icon mb-3">
+                                <img src="https://img.icons8.com/wired/80/000000/installing-updates.png"/>
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Hassle free <br>installation.</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-sm-4 col-xs-6 col-lg-4">
+                        <!-- Icon Box -->
+                        <div class="icon-box text-center p-1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
+                            <!-- Featured Icon -->
+                            <div class="featured-icon mb-3">
+                                <img src="https://img.icons8.com/windows/80/000000/user-group-woman-woman.png"/>
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">User friendly interface<br> ready</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-sm-4 col-xs-6 col-lg-4">
+                        <!-- Icon Box -->
+                        <div class="icon-box text-center p-1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                            <!-- Featured Icon -->
+                            <div class="featured-icon mb-3">
+                                <img src="https://img.icons8.com/wired/80/000000/approve-and-update.png"/>
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Real time user and admin updates</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-sm-4 col-xs-6 col-lg-4">
+                        <!-- Icon Box -->
+                        <div class="icon-box text-center p-1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                            <!-- Featured Icon -->
+                            <div class="featured-icon mb-3">
+                                <img src="https://img.icons8.com/small/80/000000/baby-app.png"/>
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">Custom app design</h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-sm-4 col-xs-6 col-lg-4">
+                        <!-- Icon Box -->
+                        <div class="icon-box text-center p-1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                            <!-- Featured Icon -->
+                            <div class="featured-icon mb-3">
+                                <img src="https://img.icons8.com/wired/80/000000/ios-logo.png"/>
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">One push for IOS and Android platform.</h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 col-sm-4 col-xs-6 col-lg-4">
+                        <!-- Icon Box -->
+                        <div class="icon-box text-center p-1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                            <!-- Featured Icon -->
+                            <div class="featured-icon mb-3">
+                                <img src="https://img.icons8.com/carbon-copy/80/000000/bank-card-back-side.png"/>
+                            </div>
+                            <!-- Icon Text -->
+                            <div class="icon-text">
+                                <h3 class="mb-2">One on one e commerce platform.</h3>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+</body>
